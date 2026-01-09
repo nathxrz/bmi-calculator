@@ -2,12 +2,16 @@ import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import Button from "./components/Button";
-import ResultTableImc from "./components/resultTable";
+import ResultTableImc from "./components/ResultTable";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
+import Intro from "./components/Intro";
 
 function App() {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
-  const [imc, setIMC] = useState<number | null>(null);
+  const [imc, setIMC] = useState(0);
   const [weightError, setWeightError] = useState(false);
   const [heighttError, setHeightError] = useState(false);
 
@@ -44,31 +48,31 @@ function App() {
     setHeightError(false);
   };
 
-  const restart = () => {
-    setIMC(null);
-  };
-
   return (
     <>
-      {imc === null ? (
-        <>
-          <Form
-            weightValue={weight}
-            heightValue={height}
-            handleHeightChangeFunction={handleHeightChange}
-            handleWeightChangeFunction={handleWeightChange}
-            weightError={weightError}
-            heighttError={heighttError}
-          />
-          <Button onClick={calculaIMC} text="Calcular" />
-          <Button onClick={cleanFields} text="Limpar" />
-        </>
-      ) : (
-        <>
-          <ResultTableImc imcValue={imc} />
-          <Button onClick={restart} text="Voltar" />
-        </>
-      )}
+      <Header />
+      <div className="container">
+        <Intro />
+        <div className="contentGrid">
+          <Card>
+            <Form
+              weightValue={weight}
+              heightValue={height}
+              handleHeightChangeFunction={handleHeightChange}
+              handleWeightChangeFunction={handleWeightChange}
+              weightError={weightError}
+              heighttError={heighttError}
+            />
+            <Button onClick={calculaIMC} text="Calcular" />
+            <Button onClick={cleanFields} text="Limpar" />
+          </Card>
+
+          <Card>
+            <ResultTableImc imcValue={imc} />
+          </Card>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }

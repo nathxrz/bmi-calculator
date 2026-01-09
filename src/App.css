@@ -1,6 +1,15 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: #fafafa;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+.container {
+  padding: 0 11rem;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.3rem;
 }

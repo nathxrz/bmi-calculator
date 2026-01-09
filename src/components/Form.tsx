@@ -1,4 +1,5 @@
 import InputField from "./InputField";
+import styles from "./Form.module.css";
 
 export default function Form({
   weightValue,
@@ -17,21 +18,22 @@ export default function Form({
 }) {
   return (
     <>
-      <h1>Calculadora IMC</h1>
-      <InputField
-        inputValue={weightValue}
-        handleValueChange={handleWeightChangeFunction}
-        text="Peso (kg)"
-        htmlForLabel="weightInput"
-        error={weightError}
-      />
-      <InputField
-        inputValue={heightValue}
-        handleValueChange={handleHeightChangeFunction}
-        text="Altura (m)"
-        htmlForLabel="heightInput"
-        error={heighttError}
-      />
+      <form className={styles.form}>
+        <InputField
+          inputValue={weightValue}
+          handleValueChange={handleWeightChangeFunction}
+          text="Peso (kg)"
+          htmlForLabel="weightInput"
+          error={weightError}
+        />
+        <InputField
+          inputValue={heightValue}
+          handleValueChange={handleHeightChangeFunction}
+          text="Altura (m)"
+          htmlForLabel="heightInput"
+          error={heighttError}
+        />
+      </form>
     </>
   );
 }

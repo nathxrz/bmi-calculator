@@ -1,0 +1,66 @@
+.header {
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logoIcon {
+  color: var(--color-icon);
+  background-color: var(--bg-icon);
+  font-size: 3rem;
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+}
+
+.logoText {
+  color: var(--color-fc-primary);
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.logoText span {
+  color: var(--color-fc-title);
+  font-family: "Caveat Brush", cursive;
+  letter-spacing: 0rem;
+}
+
+.buttonTheme {
+  background-color: var(--bg-icon-theme-dark);
+
+  border: none;
+  border-radius: 3.2rem;
+  padding: 0.4rem 0.5rem;
+
+  width: 12.8rem;
+}
+
+.buttonTheme div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bg-icon-theme-light);
+  border-radius: 3.2rem;
+  padding: 0.2rem;
+}
+
+.buttonTheme .iconTheme {
+  color: var(--color-icon-theme);
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 0.7rem;
+}
+
+.buttonTheme:hover {
+  cursor: pointer;
+}
+
+.textTheme {
+  color: #fff;
+  font-size: 1.8rem;
+}

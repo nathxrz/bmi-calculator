@@ -3,3 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+
+  /* header */
+  --color-icon: #19aea2;
+  --bg-icon: #e7f6f5;
+  --color-icon-theme: #19aea2;
+  --bg-icon-theme-dark: #19aea2;
+  --bg-icon-theme-light: #4bbdb4;
+  --line: #f1f5f5;
+
+  /* card  */
+  --bg-card: #ffffff;
+  --color-border-card: #eff3f3;
+
+  --color-fc-primary: #000000;
+  --color-fc-secondary: #ffff;
+  --color-fc-tertiary: #5a807d;
+  --color-fc-title: #19aea2;
+
+  /* footer  */
+  --color-fc-footer: #5a807d;
+}
