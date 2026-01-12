@@ -1,9 +1,21 @@
+import type { ReactNode } from "react";
+import styles from "./Button.module.css";
 export default function Button({
   text,
   onClick: handleFunction,
+  icon,
 }: {
   text: string;
   onClick: () => void;
+  icon?: ReactNode;
 }) {
-  return <button onClick={handleFunction}>{text}</button>;
+  return (
+    <button
+      className={text === "Limpar" ? styles.actionClear : styles.actionSubmit}
+      onClick={handleFunction}
+    >
+      {icon && <span className={styles.icon}>{icon}</span>}
+      {text}
+    </button>
+  );
 }

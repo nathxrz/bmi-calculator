@@ -25,6 +25,20 @@
   --color-fc-tertiary: #5a807d;
   --color-fc-title: #19aea2;
 
+  /* buttons  */
+  --bg-btt-color-sub: #19aea2;
+  --bg-btt-color-sub-hover: #148a80;
+  --bg-btt-color-clear: #f0f4f4;
+  --bg-btt-color-clear-hover: #cfcfcf;
+  --color-btt-color-sub: #ffffff;
+  --color-btt-color-clear: #000;
+
+  /* input  */
+  --bg-input: #fafafa;
+
+  /* error  */
+  --error: #b40000;
+
   /* footer  */
   --color-fc-footer: #5a807d;
 }

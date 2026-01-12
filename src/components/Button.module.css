@@ -1,0 +1,31 @@
+.actionSubmit {
+  background-color: var(--bg-btt-color-sub);
+  color: var(--color-btt-color-sub);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.actionClear {
+  background-color: var(--bg-btt-color-clear);
+  color: var(--color-btt-color-clear);
+}
+
+.actionSubmit,
+.actionClear {
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 2.2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.actionSubmit:hover {
+  background-color: var(--bg-btt-color-sub-hover);
+}
+.actionClear:hover {
+  background-color: var(--bg-btt-color-clear-hover);
+}

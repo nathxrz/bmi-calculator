@@ -53,7 +53,7 @@ function App() {
       <Header />
       <div className="container">
         <Intro />
-        <div className="contentGrid">
+        <div className="contentLayoutGrid">
           <Card>
             <Form
               weightValue={weight}
@@ -63,8 +63,16 @@ function App() {
               weightError={weightError}
               heighttError={heighttError}
             />
-            <Button onClick={calculaIMC} text="Calcular" />
-            <Button onClick={cleanFields} text="Limpar" />
+            <div className="actionsContainer">
+              <Button
+                onClick={calculaIMC}
+                text="Calcular"
+                icon={
+                  <span className="material-symbols-outlined"> calculate </span>
+                }
+              />
+              <Button onClick={cleanFields} text="Limpar" icon="" />
+            </div>
           </Card>
 
           <Card>

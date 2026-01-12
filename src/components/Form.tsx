@@ -23,6 +23,8 @@ export default function Form({
           inputValue={weightValue}
           handleValueChange={handleWeightChangeFunction}
           text="Peso (kg)"
+          placeholder="00.0"
+          metric="kg"
           htmlForLabel="weightInput"
           error={weightError}
         />
@@ -30,6 +32,8 @@ export default function Form({
           inputValue={heightValue}
           handleValueChange={handleHeightChangeFunction}
           text="Altura (m)"
+          placeholder="175"
+          metric="cm"
           htmlForLabel="heightInput"
           error={heighttError}
         />
