@@ -52,7 +52,7 @@
 
 .buttonTheme .iconTheme {
   color: var(--color-icon-theme);
-  background-color: #fff;
+  background-color: var(--bg-icon-theme);
   border-radius: 100%;
   padding: 0.7rem;
 }

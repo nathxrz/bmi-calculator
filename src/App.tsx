@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 import Form from "./components/form/Form";
 import Button from "./components/Button";
@@ -9,6 +9,7 @@ import Intro from "./components/Intro";
 import ClassificationTable from "./components/classification/ClassificationTable";
 import TipBox from "./components/TipBox";
 import ResultClassificationImc from "./components/ResultClassificationImc";
+import { ThemeModeContext } from "./context/ThemeModeContext";
 
 function App() {
   const [weight, setWeight] = useState("");
@@ -53,8 +54,16 @@ function App() {
     setVisibleResult(false);
   };
 
+  const themeContext = useContext(ThemeModeContext);
+
+  if (!themeContext) {
+    return null;
+  }
+
+  const { theme } = themeContext;
+
   return (
-    <>
+    <div className={theme === "dark" ? "main theme-dark" : "main theme-light"}>
       <Header />
       <div className="container">
         <Intro />
@@ -101,7 +110,7 @@ function App() {
         {visibleResult && <ResultClassificationImc imcValue={imc} />}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

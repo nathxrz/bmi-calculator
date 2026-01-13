@@ -12,7 +12,7 @@
 }
 
 .tipIcon {
-  color: var(--color-fc-secondary);
+  color: var(--color-icon-tip);
   background-color: #19aea2;
   padding: 1.5rem;
   border-radius: 100%;
