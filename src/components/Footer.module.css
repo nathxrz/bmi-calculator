@@ -1,7 +1,7 @@
 .footer {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--color-fc-footer);
-  margin: 0 8rem;
+  margin: 6rem 8rem 0;
   border-top: 1px solid var(--line);
   padding: 2rem 0;
 }

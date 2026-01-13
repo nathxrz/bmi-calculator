@@ -31,7 +31,7 @@ export default function Form({
         <InputField
           inputValue={heightValue}
           handleValueChange={handleHeightChangeFunction}
-          text="Altura (m)"
+          text="Altura (cm)"
           placeholder="175"
           metric="cm"
           htmlForLabel="heightInput"

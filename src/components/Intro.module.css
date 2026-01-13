@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  margin: 5.2rem 0 6rem;
+  margin: 6.2rem 0 4rem;
 }
 
 .title {
   color: var(--color-fc-primary);
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
 
 .subtitle {
-  width: 66.7rem;
   color: var(--color-fc-tertiary);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }

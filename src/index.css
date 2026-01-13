@@ -15,6 +15,7 @@
   --bg-icon-theme-dark: #19aea2;
   --bg-icon-theme-light: #4bbdb4;
   --line: #f1f5f5;
+  --bg-header: #fff;
 
   /* card  */
   --bg-card: #ffffff;
@@ -24,6 +25,29 @@
   --color-fc-secondary: #ffff;
   --color-fc-tertiary: #5a807d;
   --color-fc-title: #19aea2;
+
+  /* classification */
+  --font-lower-color: #bd1400;
+  --border-lower-color: #fff3e3;
+  --bg-lower-color: #fff7ed;
+
+  --font-normal-color: #1fada2;
+  --border-normal-color: #cffae4;
+  --bg-normal-color: #ecfdf5;
+
+  --font-overweight-color: #844b04;
+  --border-overweight-color: #fefacb;
+  --bg-overweight-color: #fefce8;
+
+  --font-obesity-color: #b40000;
+  --border-obesity-color: #fedfdf;
+  --bg-obesity-color: #fef2f2;
+
+  /* classification line */
+  --bg-lowerLine-color: #fb923c;
+  --bg-normalLine-color: #19aea2;
+  --bg-overweightLine-color: #facc15;
+  --bg-obesityLine-color: #ef4444;
 
   /* buttons  */
   --bg-btt-color-sub: #19aea2;
@@ -35,6 +59,17 @@
 
   /* input  */
   --bg-input: #fafafa;
+
+  /* tip */
+  --font-tip-color: #4e7874;
+  --border-tip-color: #bde6e1;
+  --bg-tip-color: #eff6f5;
+
+  /* result card  */
+  --border-card-result: #bde6e1;
+  --bg-card-light-result: #ffffff;
+  --bg-card-dark-result: #19aea2;
+  --bg-card-classification: #4bbdb4;
 
   /* error  */
   --error: #b40000;

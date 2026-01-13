@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  border-radius: 2.1rem;
+  padding: 1.4rem 2rem;
+}
+
+.lowWeight {
+  color: var(--font-lower-color);
+  border: 1px solid var(--border-lower-color);
+  background-color: var(--bg-lower-color);
+}
+
+.normalWeight {
+  color: var(--font-normal-color);
+  border: 1px solid var(--border-normal-color);
+  background-color: var(--bg-normal-color);
+}
+
+.overweight {
+  color: var(--font-overweight-color);
+  border: 1px solid var(--border-overweight-color);
+  background-color: var(--bg-overweight-color);
+}
+
+.obesity {
+  color: var(--font-obesity-color);
+  border: 1px solid var(--border-obesity-color);
+  background-color: var(--bg-obesity-color);
+}

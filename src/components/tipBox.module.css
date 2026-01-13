@@ -1,0 +1,32 @@
+.tipCard {
+  background-color: var(--bg-tip-color);
+  border: 1px solid var(--border-tip-color);
+  border-radius: 2.8rem;
+  padding: 3.2rem 3rem;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.tipIcon {
+  color: var(--color-fc-secondary);
+  background-color: #19aea2;
+  padding: 1.5rem;
+  border-radius: 100%;
+}
+
+.tipTitle {
+  color: var(--color-fc-primary);
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tipInfo {
+  color: var(--font-tip-color);
+  font-size: 1.6rem;
+}

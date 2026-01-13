@@ -1,17 +1,20 @@
 import { useState } from "react";
 import "./App.css";
-import Form from "./components/Form";
+import Form from "./components/form/Form";
 import Button from "./components/Button";
-import ResultTableImc from "./components/ResultTable";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
 import Intro from "./components/Intro";
+import ClassificationTable from "./components/classification/ClassificationTable";
+import TipBox from "./components/TipBox";
+import ResultClassificationImc from "./components/ResultClassificationImc";
 
 function App() {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [imc, setIMC] = useState(0);
+  const [visibleResult, setVisibleResult] = useState(false);
   const [weightError, setWeightError] = useState(false);
   const [heighttError, setHeightError] = useState(false);
 
@@ -28,9 +31,10 @@ function App() {
     const weightValue = parseFloat(weight);
     const heightValue = parseFloat(height);
 
-    const imcValue = weightValue / Math.pow(heightValue, 2);
+    const imcValue = weightValue / Math.pow(heightValue / 100, 2);
 
     setIMC(imcValue);
+    setVisibleResult(true);
   };
 
   const handleWeightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,6 +50,7 @@ function App() {
     setHeight("");
     setWeightError(false);
     setHeightError(false);
+    setVisibleResult(false);
   };
 
   return (
@@ -55,6 +60,10 @@ function App() {
         <Intro />
         <div className="contentLayoutGrid">
           <Card>
+            <h2 className="sectionTitle">
+              <span className="material-symbols-outlined">edit_square</span>
+              Insira seus dados
+            </h2>
             <Form
               weightValue={weight}
               heightValue={height}
@@ -76,9 +85,20 @@ function App() {
           </Card>
 
           <Card>
-            <ResultTableImc imcValue={imc} />
+            <h2 className="sectionTitle">
+              <span className="material-symbols-outlined">info</span>
+              Classificação
+            </h2>
+            <ClassificationTable />
+            <p className="info">
+              *O IMC é um indicador geral. Consulte sempre um profissional de
+              saúde para uma avaliação física detalhada.
+            </p>
           </Card>
         </div>
+        <TipBox />
+
+        {visibleResult && <ResultClassificationImc imcValue={imc} />}
       </div>
       <Footer />
     </>
