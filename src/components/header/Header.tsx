@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import styles from "./Header.module.css";
-import { ThemeModeContext } from "../context/ThemeModeContext";
+import { ThemeModeContext } from "../../context/ThemeModeContext";
+import ButtonsThemeActions from "./ButtonsThemeActions";
 
 export default function Header() {
   const themeContext = useContext(ThemeModeContext);
@@ -21,16 +22,7 @@ export default function Header() {
           Calcula<span>IMC</span>
         </h1>
       </div>
-      <button onClick={toggleTheme} className={styles.buttonTheme}>
-        <div>
-          <span className={`material-symbols-outlined ${styles.iconTheme}`}>
-            {theme === "light" ? "light_mode" : "dark_mode"}
-          </span>
-          <p className={styles.textTheme}>
-            {theme === "light" ? "Claro" : "Escuro"}
-          </p>
-        </div>
-      </button>
+      <ButtonsThemeActions theme={theme} toggleTheme={toggleTheme} />
     </header>
   );
 }

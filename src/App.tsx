@@ -1,8 +1,7 @@
 import { useContext, useState } from "react";
 import "./App.css";
 import Form from "./components/form/Form";
-import Button from "./components/Button";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
 import Intro from "./components/Intro";
@@ -10,6 +9,7 @@ import ClassificationTable from "./components/classification/ClassificationTable
 import TipBox from "./components/TipBox";
 import ResultClassificationImc from "./components/ResultClassificationImc";
 import { ThemeModeContext } from "./context/ThemeModeContext";
+import ButtonForm from "./components/form/ButtonForm";
 
 function App() {
   const [weight, setWeight] = useState("");
@@ -82,14 +82,14 @@ function App() {
               heighttError={heighttError}
             />
             <div className="actionsContainer">
-              <Button
+              <ButtonForm
                 onClick={calculaIMC}
                 text="Calcular"
                 icon={
                   <span className="material-symbols-outlined"> calculate </span>
                 }
               />
-              <Button onClick={cleanFields} text="Limpar" icon="" />
+              <ButtonForm onClick={cleanFields} text="Limpar" icon="" />
             </div>
           </Card>
 

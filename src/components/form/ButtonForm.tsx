@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import styles from "./Button.module.css";
-export default function Button({
+import styles from "./ButtonForm.module.css";
+export default function ButtonForm({
   text,
   onClick: handleFunction,
   icon,
