@@ -1,0 +1,141 @@
+.cardResult {
+  display: flex;
+  margin: 6rem 0;
+  border-radius: 2.8rem;
+  border: 1px solid var(--color-border-card);
+  background-color: var(--bg-card);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+
+.resultImcContent {
+  width: 50rem;
+  border-radius: 2.8rem 0 0 2.8rem;
+  padding: 4.5rem;
+  color: var(--color-fc-secondary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.resultImcContent p {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.resultImc {
+  font-family: "Inter", sans-serif;
+  font-size: 7.1rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.classificationImc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #ffffff27;
+  padding: 1rem 2rem;
+  border-radius: 3.6rem;
+  align-self: center;
+}
+
+.cardResultText {
+  width: 100%;
+  padding: 5rem 4.2rem;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 1fr 3fr 2fr 2fr 1.5fr 1fr;
+  transition: grid-template-columns 0.3s ease;
+}
+
+.line span {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPerson {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* colors  */
+.lowColorI {
+  background-color: var(--bg-lowerLine-colorI);
+}
+.lowColorII {
+  background-color: var(--bg-lowerLine-colorII);
+}
+.lowColorIII {
+  background-color: var(--bg-lowerLine-colorIII);
+}
+.normalColor {
+  background-color: var(--bg-normalLine-color);
+}
+.overweightColor {
+  background-color: var(--bg-overweightLine-color);
+}
+.obesityColorI {
+  background-color: var(--bg-obesityLine-colorI);
+}
+.obesityColorII {
+  background-color: var(--bg-obesityLine-colorII);
+}
+.obesityColorIII {
+  background-color: var(--bg-obesityLine-colorIII);
+}
+
+/* transitions  */
+.line:has(span.lowColorI:hover) {
+  grid-template-columns: 2fr 0.8fr 1fr 3fr 2fr 2fr 1.5fr 1fr;
+}
+.line:has(span.lowColorII:hover) {
+  grid-template-columns: 0.5fr 2fr 1fr 3fr 2fr 2fr 1.5fr 1fr;
+}
+.line:has(span.lowColorIII:hover) {
+  grid-template-columns: 0.5fr 0.8fr 2fr 3fr 2fr 2fr 1.5fr 1fr;
+}
+.line:has(span.normalColor:hover) {
+  grid-template-columns: 0.5fr 0.8fr 1fr 4fr 2fr 2fr 1.5fr 1fr;
+}
+.line:has(span.overweightColor:hover) {
+  grid-template-columns: 0.5fr 0.8fr 1fr 3fr 3fr 2fr 1.5fr 1fr;
+}
+.line:has(span.obesityColorI:hover) {
+  grid-template-columns: 0.5fr 0.8fr 1fr 3fr 2fr 3fr 1.5fr 1fr;
+}
+.line:has(span.obesityColorII:hover) {
+  grid-template-columns: 0.5fr 0.8fr 1fr 3fr 2fr 2fr 2.5fr 1fr;
+}
+.line:has(span.obesityColorIII:hover) {
+  grid-template-columns: 0.5fr 0.8fr 1fr 3fr 2fr 2fr 1.5fr 2fr;
+}
+
+.line span:first-child {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.line span:last-child {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.cardResultTitle {
+  color: var(--color-fc-primary);
+  font-size: 2rem;
+  letter-spacing: 10%;
+  font-weight: 600;
+  margin: 4rem 0 1.5rem;
+}
+
+.cardResultTips {
+  color: var(--color-fc-tertiary);
+  font-size: 2rem;
+  line-height: 2.5rem;
+}

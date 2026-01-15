@@ -6,27 +6,3 @@
   border-bottom: 1px solid var(--line);
   background-color: var(--bg-header);
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.logoIcon {
-  color: var(--color-icon);
-  background-color: var(--bg-icon);
-  font-size: 3rem;
-  padding: 1.5rem;
-  border-radius: 1.3rem;
-}
-
-.logoText {
-  color: var(--color-fc-primary);
-  font-size: 3rem;
-  letter-spacing: 0.2rem;
-}
-
-.logoText span {
-  color: var(--color-fc-title);
-  font-family: "Caveat Brush", cursive;
-  letter-spacing: 0rem;
-}

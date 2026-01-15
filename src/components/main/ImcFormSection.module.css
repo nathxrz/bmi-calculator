@@ -1,0 +1,6 @@
+.actionsContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: auto;
+  gap: 1.7rem;
+}

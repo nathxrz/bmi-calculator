@@ -9,10 +9,14 @@
   font-size: 62.5%;
 
   /* classification line */
-  --bg-lowerLine-color: #fb923c;
+  --bg-lowerLine-colorI: #fcad6d;
+  --bg-lowerLine-colorII: #fa913c;
+  --bg-lowerLine-colorIII: #c85a00;
   --bg-normalLine-color: #19aea2;
   --bg-overweightLine-color: #facc15;
-  --bg-obesityLine-color: #ef4444;
+  --bg-obesityLine-colorI: #f04343;
+  --bg-obesityLine-colorII: #a32e2e;
+  --bg-obesityLine-colorIII: #812424;
 
   /* buttons */
   --bg-btt-color-sub: #19aea2;

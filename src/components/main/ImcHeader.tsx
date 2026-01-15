@@ -1,5 +1,5 @@
-import styles from "./Intro.module.css";
-export default function Intro() {
+import styles from "./ImcHeader.module.css";
+export default function ImcHeader() {
   return (
     <div className={styles.imcHeader}>
       <h1 className={styles.title}>Calculadora IMC</h1>

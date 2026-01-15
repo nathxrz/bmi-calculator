@@ -1,5 +1,15 @@
 import styles from "./InputField.module.css";
 
+type InputFieldProps = {
+  inputValue: string;
+  handleValueChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  text: string;
+  placeholder: string;
+  metric: string;
+  htmlForLabel: string;
+  error: boolean;
+};
+
 export default function InputField({
   inputValue,
   handleValueChange,
@@ -8,15 +18,7 @@ export default function InputField({
   metric,
   htmlForLabel,
   error,
-}: {
-  inputValue: string;
-  handleValueChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  text: string;
-  placeholder: string;
-  metric: string;
-  htmlForLabel: string;
-  error: boolean;
-}) {
+}: InputFieldProps) {
   return (
     <div className={styles.inputContains}>
       <label className={styles.inputLabel} htmlFor={htmlForLabel}>

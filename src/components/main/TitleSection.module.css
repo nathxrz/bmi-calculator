@@ -1,0 +1,13 @@
+.sectionTitle {
+  color: var(--color-fc-primary);
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle span {
+  color: #19aea2;
+}

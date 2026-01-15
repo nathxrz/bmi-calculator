@@ -19,7 +19,7 @@
 .inputElement {
   width: 100%;
   background-color: var(--bg-input);
-  padding: 3.7rem 3rem;
+  padding: 3.7rem 7rem 3.7rem 3rem;
   border: none;
   border-radius: 3rem;
   font-family: "Inter", sans-serif;
@@ -43,7 +43,8 @@
   font-weight: 700;
   position: absolute;
   right: 3rem;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .inputError {
