@@ -10,9 +10,6 @@
     </td>
   </tr>
 </table>
-<p align="center">
-  <a href="https://nathxrz.github.io/bmi-calculator/">🔗 Acessar protótipo</a>
-</p>
 
 <hr>
 
